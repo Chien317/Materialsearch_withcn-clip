@@ -1,0 +1,183 @@
+/* 全局样式 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f5f7fa;
+}
+
+/* 视频容器样式 */
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 比例，如果需要可以调整 */
+    margin-bottom: 10px;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* 保持视频原始比例 */
+    background: #000; /* 视频背景色 */
+}
+
+/* 容器样式 */
+.el-container {
+    min-height: 100vh;
+}
+
+/* 头部样式 */
+.el-header {
+    background-color: #409EFF;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.el-header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.header-controls {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* 主要内容区域 */
+.el-main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 标签页样式 */
+.el-tabs {
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* 表单样式 */
+.el-form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.el-form-item {
+    margin-bottom: 20px;
+}
+
+/* 上传组件样式 */
+.upload-demo {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+/* 搜索结果样式 */
+.search-results {
+    margin-top: 20px;
+}
+
+.result-card {
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+.result-card:hover {
+    transform: translateY(-5px);
+}
+
+.result-image, .result-video {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.result-info {
+    padding: 10px;
+}
+
+.result-actions {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+/* 标签样式 */
+.el-tag {
+    margin-right: 5px;
+}
+
+/* 按钮样式 */
+.el-button {
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.el-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 响应式布局 */
+@media (max-width: 768px) {
+    .el-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .header-controls {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .el-main {
+        padding: 10px;
+    }
+}
+
+/* 动画效果 */
+.el-fade-in-linear-enter-active,
+.el-fade-in-linear-leave-active {
+    transition: opacity 0.3s linear;
+}
+
+.el-fade-in-linear-enter-from,
+.el-fade-in-linear-leave-to {
+    opacity: 0;
+}
+
+/* 加载状态 */
+.el-loading-mask {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* 自定义滚动条 */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+} 
