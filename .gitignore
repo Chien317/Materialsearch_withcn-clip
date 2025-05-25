@@ -1,0 +1,123 @@
+# 模型文件
+*.pth
+*.pt
+*.bin
+*.safetensors
+*.ckpt
+*.h5
+*.pkl
+*.pickle
+
+# 数据集文件
+*.csv
+*.json
+*.jsonl
+*.txt
+*.tsv
+*.parquet
+*.arrow
+*.feather
+
+# 大型数据文件夹
+data/
+dataset/
+datasets/
+models/
+checkpoints/
+weights/
+pretrained/
+
+# 临时文件和缓存
+.tmp.driveupload/
+.tmp.drivedownload/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+.cache/
+.pytest_cache/
+
+# IDE和编辑器文件
+.idea/
+.vscode/
+.cursor/
+*.swp
+*.swo
+*~
+
+# 系统文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 日志文件
+*.log
+logs/
+log/
+
+# 环境变量和配置
+.env
+.env.local
+.env.*.local
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# 其他大文件
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.iso
+*.dmg
+*.img
+
+# 嵌套的git仓库（第三方项目）
+awesome-cursor-rules-mdc/
+awesome-cursorrules/
+cursor-watchful-headers/
+model_training/Chinese-CLIP/
+
+# 数据库文件
+*.db
+*.sqlite
+*.sqlite3
+
+# 分布式结果文件（通常很大）
+distributed_results_*/
+*/zeroshot_predictions/
+*/results/
+
+# 媒体文件
+*.heic
+*.mov
+*.mp4
+*.avi
+*.mkv
+*.webm
+*.jpeg
+*.jpg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.wav
+*.mp3
+*.flac
+*.aac
+
+# 私有数据集和临时文件
+private_dataset/
+materialsearch_new/tmp/
+*.mdb
+
+# 示例和临时照片文件夹
+model_demo/examples/
+model_trainingv0/dataBackup/temp_photos/
+materialsearch_new/instance/ 
